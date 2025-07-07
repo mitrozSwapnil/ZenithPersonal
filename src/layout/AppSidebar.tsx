@@ -15,6 +15,7 @@ import {
   TableIcon,
   UserCircleIcon,
   DocsIcon,
+  
 } from "../icons";
 import { useSidebar } from "../context/SidebarContext";
 import SidebarWidget from "./SidebarWidget";
