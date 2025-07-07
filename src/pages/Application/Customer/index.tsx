@@ -2,7 +2,7 @@ import React from 'react';
 import DataTable from './Component/DataTable';
 
 export default function Customer() {
-  const projectData = Array.from({ length: 12 }, (_, i) => ({
+   const projectData = Array.from({ length: 12 }, (_, i) => ({
     id: i + 1,
     projectName: `Project ${i + 1}`,
     clientName: `Client ${i + 1}`,
