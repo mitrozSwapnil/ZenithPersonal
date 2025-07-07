@@ -20,6 +20,7 @@ import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
 import Application from "./pages/Application";
 import Form from "./pages/Application/Customer/Forms";
+import Admin from "./pages/Admin";
 
 export default function App() {
   return (
@@ -36,7 +37,7 @@ export default function App() {
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/blank" element={<Blank />} />
             <Route path="/application" element={<Application />} />
-              <Route path="/Form" element={<Form />} />
+            <Route path="/Form" element={<Form />} />
 
             {/* Forms */}
             <Route path="/form-elements" element={<FormElements />} />
@@ -60,6 +61,7 @@ export default function App() {
           {/* Auth Layout */}
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/admin" element={<Admin />} />
 
           {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />
