@@ -55,9 +55,9 @@ const DataTable: React.FC<DataTableProps> = ({ data, itemsPerPage = 5 }) => {
               <td className="px-2 py-3">
                 <span
                   className={`px-2 py-1 text-xs rounded-full ${
-                    project.status === 'Completed'
+                    project.status === 'Under Review'
                       ? 'bg-green-100 text-green-700'
-                      : project.status === 'In Progress'
+                      : project.status === 'Under Review'
                       ? 'bg-yellow-100 text-yellow-700'
                       : 'bg-red-100 text-red-700'
                   }`}
@@ -67,7 +67,8 @@ const DataTable: React.FC<DataTableProps> = ({ data, itemsPerPage = 5 }) => {
               </td>
               <td className="px-2 py-3">
                 <button className="text-sm text-white bg-blue-600 px-4 rounded-md mr-2" >View</button>
-                <button className="text-sm text-blue-600 mr-2">Edit</button>
+                  <button className="text-sm text-white bg-green-500 px-4 rounded-md mr-2" >Download</button>
+               
                 {/* <button className="text-sm text-red-600">Delete</button> */}
               </td>
             </tr>
