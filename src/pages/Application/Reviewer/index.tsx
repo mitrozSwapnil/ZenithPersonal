@@ -1,5 +1,6 @@
 import React from 'react'
 import DataTable from './DataTable'
+import CertificateBoxCard from '../../../components/cards/CertificateBoxCard';
 
 
 function Reviewer() {
@@ -9,10 +10,28 @@ function Reviewer() {
     companyName: `Client ${i + 1}`,
     type: `type ${i + 1}`,
     receivedDate: '2025-07-05',
-    status: i % 3 === 0 ? 'Completed' : i % 3 === 1 ? 'In Progress' : 'Pending',
+    status: i % 3 === 0 ? 'Under Review' : i % 3 === 1 ? 'Waiting For Approval' : 'New Application',
   }));
   return (
     <div>
+      <div className='flex gap-2'>
+       <CertificateBoxCard
+       title='IOS'
+       value={49}
+       />
+       <CertificateBoxCard
+       title='ICMED'
+       value={10}
+       />
+       <CertificateBoxCard
+       title='FSSC'
+       value={49}
+       />
+       <CertificateBoxCard
+       title='ISo/IEC'
+       value={49}
+       />
+      </div>
       <DataTable 
       data={projectData}
       itemsPerPage={5}

@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import Button from '../../../../components/Button/ReviewButton';
 
 type Project = {
   id: number;
@@ -56,24 +57,22 @@ const DataTable: React.FC<DataTableProps> = ({ data, itemsPerPage = 5 }) => {
               
               <td className="px-2 py-3">
                 <span
-                  className={`px-2 py-1 text-xs rounded-full ${
-                    project.status === 'Completed'
-                      ? 'bg-green-100 text-green-700'
-                      : project.status === 'In Progress'
-                      ? 'bg-yellow-100 text-yellow-700'
-                      : 'bg-red-100 text-red-700'
+                  className={`px-2 py-1 w-[80px] h-[30px] rounded-[10px] font-semibold text-sm  ${
+                    project.status === 'Under Review'
+                      ? 'bg-green-100 text-[#5EAD3D]'
+                      : project.status === 'Waiting For Approval'
+                      ? 'bg-yellow-100 text-[#F04034]'
+                      : 'bg-red-100 text-[#FF6A00]'
                   }`}
                 >
                   {project.status}
                 </span>
               </td>
               <td className="px-2 py-3">
-  <button
-    className="w-[80px] h-[30px] rounded-[10px] text-[#89b2f5]  font-semibold text-sm border border-[#89b2f5] transition duration-200"
-  >
-    Review
-  </button>
-</td>
+                <Button
+                 title='Review'
+                />
+              </td>
 
 
             </tr>
