@@ -9,8 +9,14 @@ export default function NewApplicationForm() {
     return (
 
 <>
+ 
+
+
+ 
+ {/* MAin */}
+
 <div className="flex w-full gap-6">
-       <h3 className="text-2xl font-semibold text-gray-800">New Application Form </h3>
+       <h3 className="text-2xl font-semibold text-gray-800 ">New Application Form </h3>
 
 </div>
 
