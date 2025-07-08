@@ -37,7 +37,12 @@ export default function App() {
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/blank" element={<Blank />} />
             <Route path="/application" element={<Application />} />
+<<<<<<< HEAD
             <Route path="/Form" element={<Form />} />
+=======
+              <Route path="/Form" element={<Form />} />
+            
+>>>>>>> 0f9f8ef4120cedfc6dab95410a6c78bb3214d303
 
             {/* Forms */}
             <Route path="/form-elements" element={<FormElements />} />
